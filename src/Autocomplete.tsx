@@ -1,18 +1,16 @@
-export interface AutocompleteProps {
+export interface AutocompleteProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;
   name: string;
-  fill?: boolean;
 }
 
 const Autocomplete = ({
   id,
   name,
-  fill = true,
+  placeholder,
   ...props
 }: AutocompleteProps) => {
   const inputRef = React.useRef<HTMLInputElement>(null);
-
-  console.log('fill', fill);
 
   if (inputRef.current) {
     console.log('input value', inputRef.current.value);
@@ -22,6 +20,7 @@ const Autocomplete = ({
     <input
       id={id}
       name={name}
+      placeholder={placeholder}
       type='search'
       className='react-autocomplete'
       ref={inputRef}
