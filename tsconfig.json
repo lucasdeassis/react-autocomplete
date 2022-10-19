@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "jsx": "react-jsx",
+    "jsx": "react",
     "outDir": "dist",
     "composite": false,
     "declaration": false,
@@ -13,6 +13,7 @@
     "strict": true,
     "importsNotUsedAsValues": "error",
     "incremental": true,
+    "allowSyntheticDefaultImports": true,
   },
   "include": ["src/*"],
   "exclude": ["node_modules"]
