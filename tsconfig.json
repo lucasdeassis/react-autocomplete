@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "composite": false,
+    "declaration": false,
+    "inlineSources": false,
+    "moduleResolution": "Node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "strict": true,
+    "importsNotUsedAsValues": "error",
+    "incremental": true,
+  },
+  "include": ["src/*"],
+  "exclude": ["node_modules"]
+}
