@@ -20,3 +20,5 @@ For this component, please consider the following functionality edge-cases:
 - Use list of countries as a dataset
 - Use `Fetch` API and handle API errors, maintaining previous component state. Catch all approach and log to console
 - Define package as a module and add source compilation with `tsc`. Allow js-only import and usage
+- Use `swc` for compilation
+- Allow custom css classname
