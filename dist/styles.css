@@ -1,3 +1,22 @@
-.react-autocomplete {
-    padding: 4px 8px
+.react-autocomplete-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.react-autocomplete-input {
+  padding: 4px 8px;
+}
+
+.react-autocomplete-loading {
+  animation: spin 1.5s infinite;
+  margin-left: 4px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
