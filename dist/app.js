@@ -12,9 +12,14 @@ root.render(
     placeholder: 'search country...',
     autocomplete: 'country-name',
     getOptions: () =>
-      fetch('https://restcountries.com/v2/all?fields=name,alpha2Code').then(
-        (response) => response.json()
-      ),
+      fetch('https://restcountries.com/v2/all?fields=name,alpha2Code')
+        .then((response) => response.json())
+        .then((data) =>
+          data.map((country) => ({
+            value: country.alpha2Code,
+            name: country.name,
+          }))
+        ),
     focusMe: true,
   })
 );
