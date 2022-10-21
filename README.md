@@ -8,8 +8,15 @@ In a terminal, run `npm install` in project root. You'll need at least Node 16
 
 ## Build
 
-2. Now run `npm run serve` to compile and watch `tsx` to `dist` folder. Check `tsconfig.json` setup. Now every change to `Autocomplete.tsx` should be recompiled to `dist`.
-3. The `dist` folder has a sample `app.js` file with React `DOM` setup, a CSS File and an HTML File with React scripts. You can start a server on `dist` and open a browser locally. In a new terminal session, try:
+Run to compile and watch `tsx` to `dist` folder:
+
+```
+npm run serve
+```
+
+Check `tsconfig.json` setup. Now every change to `Autocomplete.tsx` should be recompiled to `dist`. The `dist` folder has a sample `app.js` file with React `DOM` setup, a CSS File and an HTML File with React scripts.
+
+You can start a server on `dist` and open a browser locally. In a new terminal session, try:
 
 ```
 npx http-server dist/
