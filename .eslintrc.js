@@ -34,6 +34,10 @@ module.exports = {
         varsIgnorePattern: '^_',
       },
     ],
+    '@typescript-eslint/ban-ts-comment': [
+      'error',
+      { 'ts-ignore': 'allow-with-description' },
+    ],
     'react/react-in-jsx-scope': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',

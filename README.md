@@ -22,3 +22,4 @@ For this component, please consider the following functionality edge-cases:
 - Define package as a module and add source compilation with `tsc`. Allow js-only import and usage
 - Use `swc` for compilation
 - Allow custom css classname
+- Use API for "search by" query and typeahead. API Controls more robust searches and optimize the data fetching
